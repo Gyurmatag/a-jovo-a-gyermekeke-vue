@@ -2,10 +2,24 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: 'var(--color-primary)',
+        mainbackground: 'var(--color-main-background)',
+      },
+    },
+    fontFamily: {
+      display: ['Montserrat'],
+      body: ['Montserrat'],
+      mono: ['Source Code Pro', 'SFMono-Regular'],
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      fill: ['hover'],
+      opacity: ['disabled'],
+      cursor: ['disabled'],
+    },
   },
   plugins: [],
 };
