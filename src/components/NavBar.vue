@@ -16,15 +16,15 @@
         <div class="flex items-center space-x-1">
           <router-link
             class="inline-block align-bottom p-2 mr-4 hover:text-primary"
-            to="/documents"
+            to="/news"
           >
-            {{ $t('nav.documents') }}
+            {{ $t('nav.news') }}
           </router-link>
           <router-link
             class="inline-block align-bottom p-2 mr-4 hover:text-primary"
-            to="/contacts"
+            to="/documents"
           >
-            {{ $t('nav.contacts') }}
+            {{ $t('nav.documents') }}
           </router-link>
         </div>
       </div>
