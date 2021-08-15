@@ -3,19 +3,19 @@
               overflow-hidden sm:px-6 lg:px-8 bg-mainbackground">
     <nav class="flex flex-wrap justify-center -mx-5 -my-2">
       <div class="px-5 py-2">
-        <a href="#" class="text-base leading-6 text-gray-500">
+        <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
           {{ $t('footer.about') }}
-        </a>
+        </router-link>
       </div>
       <div class="px-5 py-2">
-        <a href="#" class="text-base leading-6 text-gray-500">
+        <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
           {{ $t('footer.contact') }}
-        </a>
+        </router-link>
       </div>
       <div class="px-5 py-2">
-        <a href="#" class="text-base leading-6 text-gray-500">
+        <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
           {{ $t('footer.team') }}
-        </a>
+        </router-link>
       </div>
     </nav>
     <div class="flex justify-center mt-8 space-x-6">

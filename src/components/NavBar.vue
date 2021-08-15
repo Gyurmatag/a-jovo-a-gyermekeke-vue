@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-mainbackground text-primary">
+  <nav class="bg-mainbackground text-gray-400">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex space-x-4">
@@ -15,13 +15,13 @@
         </div>
         <div class="flex items-center space-x-1">
           <router-link
-            class="inline-block align-bottom p-2 mr-4"
+            class="inline-block align-bottom p-2 mr-4 hover:text-primary"
             to="/documents"
           >
             {{ $t('nav.documents') }}
           </router-link>
           <router-link
-            class="inline-block align-bottom p-2 mr-4"
+            class="inline-block align-bottom p-2 mr-4 hover:text-primary"
             to="/contacts"
           >
             {{ $t('nav.contacts') }}
