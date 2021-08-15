@@ -5,5 +5,11 @@
   "nav": {
     "documents": "Dokumentumok",
     "contacts": "Kapcsolat"
+  },
+  "footer": {
+    "about": "Rólunk",
+    "contact": "Kapcsolat",
+    "team": "Csapat",
+    "copyright": "© 2021 A Jövő a Gyermekeké Alapítvány"
   }
 }
