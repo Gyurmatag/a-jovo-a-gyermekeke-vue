@@ -21,10 +21,11 @@
             {{ $t('nav.news') }}
           </router-link>
           <router-link
-            class="inline-block align-bottom p-2 mr-4 hover:text-primary"
-            to="/documents"
+            class="inline-block align-bottom p-2 mr-4 bg-green-600
+                   text-white rounded-lg hover:bg-green-500"
+            to="/donate"
           >
-            {{ $t('nav.documents') }}
+            {{ $t('nav.donate') }}
           </router-link>
         </div>
       </div>

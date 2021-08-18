@@ -4,17 +4,12 @@
     <nav class="flex flex-wrap justify-center -mx-5 -my-2">
       <div class="px-5 py-2">
         <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
-          {{ $t('footer.about') }}
+          {{ $t('footer.publicBenefitReports') }}
         </router-link>
       </div>
       <div class="px-5 py-2">
         <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
-          {{ $t('footer.contact') }}
-        </router-link>
-      </div>
-      <div class="px-5 py-2">
-        <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
-          {{ $t('footer.team') }}
+          {{ $t('footer.financialStatements') }}
         </router-link>
       </div>
     </nav>
