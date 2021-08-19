@@ -1,13 +1,15 @@
 <template>
-  <header>
-    <navbar />
-  </header>
-  <main class="flex-grow">
-    <router-view />
-  </main>
-  <footer>
-    <footer-bar />
-  </footer>
+  <div class="flex flex-col h-screen">
+    <header>
+      <navbar />
+    </header>
+    <main class="flex-grow">
+      <router-view />
+    </main>
+    <footer>
+      <footer-bar />
+    </footer>
+  </div>
 </template>
 
 <script>

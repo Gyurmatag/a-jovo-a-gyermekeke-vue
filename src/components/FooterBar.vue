@@ -8,7 +8,8 @@
         </router-link>
       </div>
       <div class="px-5 py-2">
-        <router-link to="/" class="text-base leading-6 text-gray-500 hover:text-primary">
+        <router-link to="/documents/financial-statements"
+                     class="text-base leading-6 text-gray-500 hover:text-primary">
           {{ $t('footer.financialStatements') }}
         </router-link>
       </div>
