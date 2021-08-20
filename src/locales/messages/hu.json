@@ -17,7 +17,8 @@
     "financialStatements": {
       "title": "Pénzügyi beszámolók",
       "year": {
-        "2020": "2020-as év"
+        "2020": "2020-as év",
+        "2019": "2019-es év"
       }
     }
   }
