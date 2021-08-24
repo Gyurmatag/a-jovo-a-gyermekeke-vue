@@ -21,5 +21,14 @@
         "2019": "2019-es év"
       }
     }
+  },
+  "donate": {
+    "title": "Támogatás",
+    "donateHeader": "Támogasd az alapítványunkat!",
+    "donateAction": "Támogatom!",
+    "types": {
+      "withWire": "Átutalással",
+      "withOnePercent": "Adó 1%-val"
+    }
   }
 }

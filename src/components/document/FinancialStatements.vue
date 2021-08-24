@@ -32,9 +32,3 @@ export default {
 
 };
 </script>
-
-<style scoped>
-img  {
-  fill: red;
-}
-</style>
