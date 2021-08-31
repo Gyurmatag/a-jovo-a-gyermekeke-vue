@@ -29,6 +29,12 @@
     "types": {
       "withWire": "Átutalással",
       "withOnePercent": "Adó 1%-val"
+    },
+    "withWire": {
+      "accountNameLabel": "Számlatulajdonos neve",
+      "accountName": "A Jövő a Gyermekeké Alapítvány",
+      "accountNumberLabel": "Számlaszám",
+      "accountNumber": "11739009-23910175"
     }
   }
 }
