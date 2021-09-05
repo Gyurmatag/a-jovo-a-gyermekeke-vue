@@ -42,9 +42,9 @@ export default {
   setup() {
     const donateType = ref('withWire');
 
-    function switchDonateType(type) {
+    const switchDonateType = (type) => {
       donateType.value = type;
-    }
+    };
 
     return {
       donateType,
