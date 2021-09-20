@@ -1,16 +1,21 @@
 <template>
-  <div class="home-hero">
-    <hero />
+  <div class="flex justify-center">
+    <home-first />
+  </div>
+  <div class="flex justify-center">
+    <home-second />
   </div>
 </template>
 
 <script>
-import Hero from '@/components/Hero.vue';
+import HomeFirst from '@/components/home/HomeFirst.vue';
+import HomeSecond from '@/components/home/HomeSecond.vue';
 
 export default {
   name: 'Home',
   components: {
-    Hero,
+    HomeSecond,
+    HomeFirst,
   },
 };
 </script>

@@ -36,5 +36,14 @@
       "accountNumberLabel": "Számlaszám",
       "accountNumber": "11739009-23910175"
     }
+  },
+  "homeFirst": {
+    "firstRowText": "azért dolgozik, hogy az egri",
+    "secondRowText": "Eszterházy Károly Gyakorlóiskola",
+    "thirdRowText": "bartók téri épületében a gyerekek számára jobb tanulási környezetet teremtsen."
+  },
+  "homeSecond": {
+    "firstRowText": "célunk",
+    "secondRowText": "Célunk minden olyan tevékenység támogatása,\n      amely a Bartók téri általános iskolába járó gyermekek tanulását segíti, illetve javítja az iskolai klímát"
   }
 }

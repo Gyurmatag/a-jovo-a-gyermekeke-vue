@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: 'var(--color-primary)',
         mainbackground: 'var(--color-main-background)',
+        ekecolor: 'var(--color-eke)',
       },
     },
     fontFamily: {
