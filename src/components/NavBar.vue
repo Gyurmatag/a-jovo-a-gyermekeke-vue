@@ -16,6 +16,7 @@
         <div class="flex items-center space-x-1">
           <router-link
             class="inline-block align-bottom p-2 mr-4 hover:text-primary"
+            active-class="text-primary"
             to="/news"
           >
             {{ $t('nav.news') }}

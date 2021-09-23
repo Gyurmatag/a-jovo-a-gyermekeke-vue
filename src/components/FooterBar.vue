@@ -4,7 +4,8 @@
     <nav class="flex flex-wrap justify-center -mx-5 -my-2">
       <div class="px-5 py-2">
         <router-link to="/documents/financial-statements"
-                     class="text-base leading-6 text-gray-500 hover:text-primary">
+                     class="text-base leading-6 text-gray-500 hover:text-primary"
+                     active-class="text-primary">
           {{ $t('footer.financialStatements') }}
         </router-link>
       </div>
