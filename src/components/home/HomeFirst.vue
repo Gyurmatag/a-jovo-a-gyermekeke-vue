@@ -14,7 +14,7 @@
       </div>
     </div>
     <img alt="main photo"
-         src="https://res.cloudinary.com/gyurmatag/image/upload/v1629735451/A%20J%C3%B6v%C5%91%20a%20Gyermekek%C3%A9/15_1.jpg"
+         src="https://res.cloudinary.com/gyurmatag/image/upload/v1634059360/A%20J%C3%B6v%C5%91%20a%20Gyermekek%C3%A9/tabla_gyerek.jpg"
          class="w-full md:w-1/2 rounded-lg"/>
   </div>
 </template>
