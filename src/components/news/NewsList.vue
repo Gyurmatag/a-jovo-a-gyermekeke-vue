@@ -15,7 +15,7 @@
       </news-card>
     </div>
   </div>
-  <div v-if="isLoading" class="flex flex-col mt-6 items-center">
+  <div v-if="isLoading" class="flex flex-col my-6 items-center">
     <list-loading-animation></list-loading-animation>
   </div>
 </template>
