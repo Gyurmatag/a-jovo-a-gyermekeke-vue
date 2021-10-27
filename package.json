@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.23.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-i18n": "^9.1.7",
@@ -46,7 +47,10 @@
     },
     "rules": {
       "import/no-extraneous-dependencies": [
-        "error", {"devDependencies": true}
+        "error",
+        {
+          "devDependencies": true
+        }
       ]
     }
   },

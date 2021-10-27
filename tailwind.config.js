@@ -8,6 +8,10 @@ module.exports = {
         mainbackground: 'var(--color-main-background)',
         ekecolor: 'var(--color-eke)',
       },
+      animation: {
+        bounce200: 'bounce 1s infinite 200ms',
+        bounce400: 'bounce 1s infinite 400ms',
+      },
     },
     fontFamily: {
       display: ['Montserrat'],

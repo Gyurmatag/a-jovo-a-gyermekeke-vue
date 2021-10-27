@@ -3,7 +3,7 @@
               w-5/6 sm:w-3/5 lg:w-1/2 2xl:w-1/4
               bg-mainbackground transition duration-500 ease-in-out
               transform hover:shadow-2xl">
-      <img alt="news photo" src="https://res.cloudinary.com/gyurmatag/image/upload/v1629735451/A%20J%C3%B6v%C5%91%20a%20Gyermekek%C3%A9/15_1.jpg" class="max-h-60 w-full object-cover"/>
+      <img alt="news photo" :src="imageUrl" class="max-h-80 w-full object-cover"/>
       <div class="w-full">
         <div class="flex items-center mt-4 mb-4 text-sm text-gray-400">
           <svg class="opacity-75 mr-2" id="Capa_1" fill="currentColor"
@@ -13,34 +13,33 @@
             <!-- eslint-disable-next-line max-len -->
             <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
           </svg>
-          <p class="leading-none">2021. augusztus 29.</p>
+          <p class="leading-none">{{ createdAt.substring(0,10) }}  </p>
         </div>
         <p class="text-gray-200 text-xl font-medium mb-2">
-          Iskolaudvar burkolása
+          {{ title }}
         </p>
-        <p v-if="!readMoreActivated" class="text-gray-400 font-light text-md">
+        <p v-if="!readMoreActivated" class="text-gray-400 font-light text-md whitespace-pre-line">
           {{ newsText.slice(0, 200) }} ...
           <span v-if="!readMoreActivated"
                 @click="toggleReadMore"
                 class="cursor-pointer text-primary">
-            Tovább
+            {{ $t('news.newsCard.more') }}
           </span>
         </p>
-        <p v-if="readMoreActivated" class="text-gray-400 font-light text-md">
+        <p v-if="readMoreActivated" class="text-gray-400 font-light text-md whitespace-pre-line">
           {{ newsText }}
           <span v-if="readMoreActivated"
                 @click="toggleReadMore"
                 class="cursor-pointer text-primary">
-            Kevesebb
+            {{ $t('news.newsCard.less') }}
           </span>
         </p>
         <div class="flex flex-wrap justify-starts items-center mt-4
         border-t-2 border-gray-500 pt-5">
-          <div class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-primary rounded-2xl">
-            #IskolaUdvar
-          </div>
-          <div class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-primary rounded-2xl">
-            #Burkolat
+          <div v-for="hashtag in hashtags"
+               :key="hashtag"
+               class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-primary rounded-2xl">
+              #{{ hashtag }}
           </div>
         </div>
       </div>
@@ -54,18 +53,30 @@ import { ref } from 'vue';
 export default {
   name: 'NewsCard',
 
-  setup() {
-    const newsText = `
-      Az iskolaudvar rendbetétele hosszú évek óta a szülők kívánsága volt.
-      2020 nyarán gyermekbarát burkolattal fedtük
-      le az iskola udvarát, hogy a gyermekek szebb körülmények közt játszhassanak.
-      Ez 3 millió 125 ezer Ft-ba került.
-      Az iskolaudvar rendbetétele hosszú évek óta a szülők kívánsága volt.
-      2020 nyarán gyermekbarát burkolattal fedtük
-      le az iskola udvarát, hogy a gyermekek szebb körülmények közt játszhassanak.
-      Ez 3 millió 125 ezer Ft-ba került.
-    `;
+  props: {
+    createdAt: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    imageUrl: {
+      type: String,
+      required: true,
+    },
+    newsText: {
+      type: String,
+      required: true,
+    },
+    hashtags: {
+      type: Array,
+      required: true,
+    },
+  },
 
+  setup() {
     const readMoreActivated = ref(false);
 
     const toggleReadMore = () => {
@@ -73,7 +84,6 @@ export default {
     };
 
     return {
-      newsText,
       readMoreActivated,
       toggleReadMore,
     };

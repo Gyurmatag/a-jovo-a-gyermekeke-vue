@@ -50,5 +50,11 @@
     "investmentSum": "Összes beruházás",
     "annualBudget": "2021-es költségvetés",
     "allProjectCount": "Befejezett projekt"
+  },
+  "news": {
+    "newsCard": {
+      "more": "Tovább",
+      "less": "Kevesebb"
+    }
   }
 }
