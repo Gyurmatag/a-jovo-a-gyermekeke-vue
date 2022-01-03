@@ -1,8 +1,7 @@
 <template>
   <div class="overflow-hidden shadow-lg rounded-lg h-auto m-auto p-4
               w-5/6 sm:w-3/5 lg:w-1/2 2xl:w-1/4
-              bg-mainbackground transition duration-500 ease-in-out
-              transform hover:shadow-2xl">
+              bg-mainbackground hover:shadow-2xl">
       <img alt="news photo" :src="imageUrl" class="max-h-80 w-full object-cover"/>
       <div class="w-full">
         <div class="flex items-center mt-4 mb-4 text-sm text-gray-400">

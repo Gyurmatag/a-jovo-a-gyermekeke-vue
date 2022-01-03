@@ -35,6 +35,20 @@
       "accountName": "A Jövő a Gyermekeké Alapítvány",
       "accountNumberLabel": "Számlaszám",
       "accountNumber": "11739009-23910175"
+    },
+    "withOnePercent": {
+      "description": {
+        "firstLine": {
+          "electronic": "Elektronikusan ",
+          "electronicLink": "https://eszja.nav.gov.hu ",
+          "throughPage": "oldalon keresztül."
+        },
+        "secondLine": "A program automatikusan vizsgálja, hogy a megjelölt szervezet jogosult-e a felajánlásra. Az online kitöltő felület ügyfélkapus regisztráció nélkül is használható, ekkor a rendelkező nyilatkozat csak kinyomtatva, papíralapon, lezárt borítékban nyújtható be a NAV-hoz postázva vagy személyesen.",
+        "thirdLine": {
+          "customerBridge": "Ügyfélkapus regisztráció nélkül: ",
+          "customerBridgeSite": "https://webnyk.nav.gov.hu/"
+        }
+      }
     }
   },
   "homeFirst": {
