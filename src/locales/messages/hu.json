@@ -61,9 +61,9 @@
     "secondRowText": "Célunk minden olyan tevékenység támogatása,\n      amely a Bartók téri általános iskolába járó gyermekek tanulását segíti, illetve javítja az iskolai klímát"
   },
   "homeThird": {
-    "investmentSum": "Összes beruházás",
-    "annualBudget": "2021-es költségvetés",
-    "allProjectCount": "Befejezett projekt"
+    "incomeSum": "2021-es bevétel",
+    "expenditures": "2021-es kiadás",
+    "courseCount": "2021-ben megvalósult kurzusok"
   },
   "news": {
     "newsCard": {
