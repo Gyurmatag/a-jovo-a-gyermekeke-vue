@@ -44,10 +44,6 @@
           <span class="font-mono">882 200 Ft</span>
         </p>
         <p>
-          <span class="font-bold">Kézpénzes adományok: </span>
-          <span class="font-mono">882 200 Ft</span>
-        </p>
-        <p>
           <span class="font-bold">Alvállalkozóként végzett oktatási tevékenység bevétele: </span>
           <span class="font-mono">570 000 Ft</span>
         </p>
