@@ -49,7 +49,7 @@
         </p>
         <p>
           <span class="font-bold">Alvállalkozóként végzett oktatási tevékenység bevétele: </span>
-          <span class="font-mono">570 000Ft</span>
+          <span class="font-mono">570 000 Ft</span>
         </p>
       </div>
       <div v-if="activeDataPoint === 1">
