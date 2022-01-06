@@ -6,7 +6,7 @@
     <div class="flex justify-center bg-primary">
       <home-second />
     </div>
-    <div class="flex justify-center">
+    <div class="container max-w-6xl mx-auto">
       <home-third />
     </div>
   </div>
