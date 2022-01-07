@@ -27,8 +27,8 @@
                   cursor-pointer hover:bg-gray-200"
            :class="[activeDataPoint === 2 ? 'bg-primary hover:bg-primary' : '']"
            @click="dataPointClick(2)">
-        <div class="text-2xl lg:text-3xl font-bold">11 db</div>
-        {{ $t('homeThird.courseCount') }}
+        <div class="text-2xl lg:text-3xl font-bold">11 + 10 db</div>
+        {{ $t('homeThird.courseAndCampCount') }}
       </div>
     </div>
     <div class="bg-primary rounded-b-xl p-6">
@@ -98,27 +98,62 @@
           <span class="font-mono">311 000 Ft</span>
         </p>
       </div>
-      <div v-if="activeDataPoint === 2">
-        <p>
-          <span class="font-bold">Angol: </span>
-          <span class="font-mono">4 db</span>
-        </p>
-        <p>
-          <span class="font-bold">Német: </span>
-          <span class="font-mono">3 db</span>
-        </p>
-        <p>
-          <span class="font-bold">Japán: </span>
-          <span class="font-mono">2 dbt</span>
-        </p>
-        <p>
-          <span class="font-bold">Foci: </span>
-          <span class="font-mono">1 db</span>
-        </p>
-        <p>
-          <span class="font-bold">Tenisz: </span>
-          <span class="font-mono">1 db</span>
-        </p>
+      <div v-if="activeDataPoint === 2" class="flex space-x-12 md:space-x-20">
+        <div class="flex flex-col divide-y divide-gray-800">
+          <div>Kurzusok</div>
+          <div>
+            <p>
+              <span class="font-bold">Angol: </span>
+              <span class="font-mono">4 db</span>
+            </p>
+            <p>
+              <span class="font-bold">Német: </span>
+              <span class="font-mono">3 db</span>
+            </p>
+            <p>
+              <span class="font-bold">Japán: </span>
+              <span class="font-mono">2 db</span>
+            </p>
+            <p>
+              <span class="font-bold">Foci: </span>
+              <span class="font-mono">1 db</span>
+            </p>
+            <p>
+              <span class="font-bold">Tenisz: </span>
+              <span class="font-mono">1 db</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col divide-y divide-gray-800">
+          <div>Táborok</div>
+          <div>
+            <p>
+              <span class="font-bold">Kreatív</span>
+            </p>
+            <p>
+              <span class="font-bold">Szivacskézilabda</span>
+            </p>
+            <p>
+              <span class="font-bold">Robotika táborok</span>
+            </p>
+            <p>
+              <span class="font-bold">"Happy English"</span>
+            </p>
+            <p>
+              <span class="font-bold">"Állatok világa"</span>
+            </p>
+            <p>
+              <span class="font-bold">Túratáborok</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div v-if="activeDataPoint === 2" class="mt-6">
+        <router-link to="/news"
+                     class="p-2 bg-mainbackground text-gray-200
+                     rounded-lg text-sm hover:text-primary">
+          {{ $t('homeThird.detailsInNews') }}
+        </router-link>
       </div>
     </div>
   </div>

@@ -64,7 +64,8 @@
     "yearInNumbers": "2021-es évünk számokban..",
     "incomeSum": "Bevétel",
     "expenditures": "Kiadás",
-    "courseCount": "Kurzus"
+    "courseAndCampCount": "Kurzus és Tábor",
+    "detailsInNews": "Részletek a Hírekben"
   },
   "news": {
     "newsCard": {
