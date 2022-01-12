@@ -13,16 +13,23 @@
               >
             </router-link>
         </div>
-        <div class="flex items-center space-x-1">
+        <div class="flex items-center space-x-4">
           <router-link
-            class="inline-block align-bottom p-2 mr-4 hover:text-primary"
+            class="inline-block align-bottom p-2 hover:text-primary"
+            active-class="text-primary"
+            to="/applications"
+          >
+            {{ $t('nav.applications') }}
+          </router-link>
+          <router-link
+            class="inline-block align-bottom p-2 hover:text-primary"
             active-class="text-primary"
             to="/news"
           >
             {{ $t('nav.news') }}
           </router-link>
           <router-link
-            class="inline-block align-bottom p-2 mr-4 bg-green-600
+            class="inline-block align-bottom p-2 bg-green-600
                    text-white rounded-lg hover:bg-green-500"
             to="/donate"
           >
