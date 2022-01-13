@@ -17,22 +17,23 @@
         <p class="text-gray-200 text-xl font-medium mb-2">
           {{ title }}
         </p>
-        <p v-if="!readMoreActivated" class="text-gray-400 font-light text-md whitespace-pre-line">
-          {{ newsText.slice(0, 200) }} ...
-          <span v-if="!readMoreActivated"
-                @click="toggleReadMore"
-                class="cursor-pointer text-primary">
-            {{ $t('news.newsCard.more') }}
-          </span>
-        </p>
-        <p v-if="readMoreActivated" class="text-gray-400 font-light text-md whitespace-pre-line">
-          {{ newsText }}
-          <span v-if="readMoreActivated"
-                @click="toggleReadMore"
-                class="cursor-pointer text-primary">
-            {{ $t('news.newsCard.less') }}
-          </span>
-        </p>
+        <div class="flex flex-col">
+          <div class="text-gray-400 font-light text-md">
+              <div v-html="newsText.slice(0, newsText.indexOf('\n'))"></div>
+          </div>
+          <transition-expand>
+            <div v-if="readMoreActivated"
+                  class="text-gray-400 font-light text-md ">
+              <div v-html="newsText.slice(newsText.indexOf('\n'), newsText.length)"></div>
+            </div>
+          </transition-expand>
+        </div>
+        <div>
+           <span @click="toggleReadMore"
+                 v-text="readMoreActivated ? $t('news.newsCard.less') : $t('news.newsCard.more')"
+                 class="cursor-pointer text-primary">
+           </span>
+        </div>
         <div class="flex flex-wrap justify-starts items-center mt-4
         border-t-2 border-gray-500 pt-5">
           <div v-for="hashtag in hashtags"
@@ -48,9 +49,14 @@
 <script>
 
 import { ref } from 'vue';
+import TransitionExpand from '@/components/common/TransitionExpand.vue';
 
 export default {
   name: 'NewsCard',
+
+  components: {
+    TransitionExpand,
+  },
 
   props: {
     createdAt: {

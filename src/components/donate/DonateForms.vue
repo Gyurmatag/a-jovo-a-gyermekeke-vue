@@ -18,9 +18,15 @@
           {{ $t('donate.types.withOnePercent') }}
         </button>
       </div>
-      <div class="flex flex-col space-y-2 text-lg pb-8">
-        <donate-with-wire v-if="donateType === 'withWire'"></donate-with-wire>
-        <donate-with-one-percent v-if="donateType === 'withOnePercent'"></donate-with-one-percent>
+      <div class="flex flex-col space-y-2 text-lg pb-8 h-80 md:h-60 donate-types-wrapper">
+        <transition name="mode-fade" mode="out-in">
+          <div v-if="donateType === 'withWire'" key="withWire" class="donate-type-wrapper">
+            <donate-with-wire></donate-with-wire>
+          </div>
+          <div v-else key="withOnePercent" class="donate-type-wrapper">
+            <donate-with-one-percent ></donate-with-one-percent>
+          </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -53,3 +59,13 @@ export default {
   },
 };
 </script>
+
+<style>
+  .mode-fade-enter-active, .mode-fade-leave-active {
+    transition: opacity .3s ease
+  }
+
+  .mode-fade-enter-from, .mode-fade-leave-to {
+    opacity: 0
+  }
+</style>
