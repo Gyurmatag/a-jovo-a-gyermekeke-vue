@@ -25,7 +25,7 @@
       </p>
       <div class="h-2"></div>
       <router-link to="/news">
-        <button class="rounded-md bg-mainbackground text-white p-2">
+        <button class="rounded-md bg-mainbackground text-white hover:text-primary p-2">
           {{ $t('homeThird.detailsInNews') }}
         </button>
       </router-link>
