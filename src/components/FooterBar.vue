@@ -19,7 +19,7 @@
                 clip-rule="evenodd"></path>
         </svg>
       </a>
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a href="https://www.instagram.com/ajovoagyermekeke/" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Instagram</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
           <!-- eslint-disable-next-line max-len -->
