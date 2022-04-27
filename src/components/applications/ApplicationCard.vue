@@ -28,8 +28,7 @@
       <p class="text-gray-200 text-xl font-medium mb-2">
         {{ title }}
       </p>
-      <p class="text-gray-400 font-light text-md whitespace-pre-line">
-        {{ description }}
+      <p class="text-gray-400 font-light text-md whitespace-pre-line" v-html="description">
       </p>
     </div>
   </div>
