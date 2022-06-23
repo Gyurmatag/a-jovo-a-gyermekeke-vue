@@ -8,9 +8,6 @@
     "news": "Hírek"
   },
   "footer": {
-    "about": "Rólunk",
-    "contact": "Kapcsolat",
-    "team": "Csapat",
     "financialStatements": "Pénzügyi beszámolók",
     "copyright": "© 2022 A Jövő a Gyermekeké Alapítvány"
   },
@@ -18,6 +15,7 @@
     "financialStatements": {
       "title": "Pénzügyi beszámolók",
       "year": {
+        "2021": "2021-es év",
         "2020": "2020-as év",
         "2019": "2019-es év"
       }
