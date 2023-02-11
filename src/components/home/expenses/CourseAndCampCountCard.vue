@@ -4,10 +4,6 @@
     <div>
       Kurzusok
       <p>
-        <span class="font-bold">Angol: </span>
-        <span class="font-mono">4 db</span>
-      </p>
-      <p>
         <span class="font-bold">Német: </span>
         <span class="font-mono">3 db</span>
       </p>
@@ -17,10 +13,18 @@
       </p>
       <p>
         <span class="font-bold">Foci: </span>
-        <span class="font-mono">1 db</span>
+        <span class="font-mono">2 db</span>
+      </p>
+      <p>
+        <span class="font-bold">Úszás: </span>
+        <span class="font-mono">2 db</span>
       </p>
       <p>
         <span class="font-bold">Tenisz: </span>
+        <span class="font-mono">1 db</span>
+      </p>
+      <p>
+        <span class="font-bold">Szorobán: </span>
         <span class="font-mono">1 db</span>
       </p>
       <div class="h-2"></div>
