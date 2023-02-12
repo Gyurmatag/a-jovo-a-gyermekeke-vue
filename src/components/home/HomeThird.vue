@@ -9,23 +9,15 @@
       <div class="flex flex-col py-6 px-2 text-center md:text-left w-full
                   border-t-2 border-b-0 border-mainbackground
                   cursor-pointer hover:bg-gray-200"
-           :class="[activeDataPoint === 0 ? 'bg-primary hover:bg-primary' : '']"
-           @click="dataPointClick(0)">
-        <div class="text-2xl lg:text-3xl font-bold">6,7 m HUF</div>
+           :class="[activeDataPoint === 0 ? 'bg-primary hover:bg-primary' : '']">
+        <div class="text-2xl lg:text-3xl font-bold">3,28 m HUF</div>
         <div class="mb-3">{{ $t('homeThird.incomeSum') }}</div>
-        <transition-expand>
-          <div v-if="windowWidth <= mdWidth && activeDataPoint === 0"
-               class="flex flex-col text-left whitespace-normal">
-            <income-sum-card></income-sum-card>
-          </div>
-        </transition-expand>
       </div>
       <div class="flex flex-col py-6 px-2 text-center md:text-left w-full
                   border-t-2 border-b-0 border-mainbackground
                   cursor-pointer hover:bg-gray-200"
-           :class="[activeDataPoint === 1 ? 'bg-primary hover:bg-primary' : '']"
-           @click="dataPointClick(1)">
-        <div class="text-2xl lg:text-3xl font-bold">5,6 m HUF</div>
+           :class="[activeDataPoint === 1 ? 'bg-primary hover:bg-primary' : '']">
+        <div class="text-2xl lg:text-3xl font-bold">3,38 m HUF</div>
         <div class="mb-3">{{ $t('homeThird.expenditures') }}</div>
         <transition-expand>
           <div v-if="windowWidth <= mdWidth && activeDataPoint === 1"
