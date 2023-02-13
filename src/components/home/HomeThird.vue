@@ -58,7 +58,6 @@
 import { ref } from 'vue';
 import { useWindowSize } from 'vue-window-size';
 import TransitionExpand from '@/components/common/TransitionExpand.vue';
-import IncomeSumCard from '@/components/home/expenses/IncomeSumCard.vue';
 import ExpendituresCard from '@/components/home/expenses/ExpendituresCard.vue';
 import CourseAndCampCountCard from '@/components/home/expenses/CourseAndCampCountCard.vue';
 
@@ -67,7 +66,6 @@ export default {
 
   components: {
     TransitionExpand,
-    IncomeSumCard,
     ExpendituresCard,
     CourseAndCampCountCard,
   },
