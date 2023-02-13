@@ -21,12 +21,6 @@
            @click="dataPointClick(1)">
       <div class="text-2xl lg:text-3xl font-bold">3,38 m HUF</div>
         <div class="mb-3">{{ $t('homeThird.expenditures') }}</div>
-        <transition-expand>
-          <div v-if="windowWidth <= mdWidth && activeDataPoint === 1"
-               class="flex flex-col text-left whitespace-normal">
-            <expenditures-card></expenditures-card>
-          </div>
-        </transition-expand>
       </div>
       <div class="flex flex-col py-6 px-2 text-center md:text-left w-full
                   border-t-2 border-b-0 border-mainbackground
