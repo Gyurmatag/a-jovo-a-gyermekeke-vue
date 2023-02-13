@@ -40,11 +40,6 @@
     <transition-expand>
       <div class="bg-primary rounded-b-xl p-6" v-if="windowWidth > 768">
         <transition-expand>
-          <div v-if="activeDataPoint === 0">
-            <income-sum-card></income-sum-card>
-          </div>
-        </transition-expand>
-        <transition-expand>
           <div v-if="activeDataPoint === 1">
             <expenditures-card></expenditures-card>
           </div>
